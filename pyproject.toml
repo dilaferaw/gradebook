@@ -12,9 +12,9 @@ dependencies = [
     "uvicorn[standard]>=0.54.0",
 ]
 
-[project.scripts]
-gradebook = "gradebook:main"
-
+# No console script for now. Launch the server with:
+#     uv run uvicorn gradebook.main:app --reload
+# Add a [project.scripts] entry here if a shortcut becomes useful.
 [build-system]
 requires = ["uv_build>=0.12.23,<0.13.0"]
 build-backend = "uv_build"
